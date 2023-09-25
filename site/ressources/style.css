@@ -52,3 +52,46 @@ body, html, div, p, h1, h2, h3, h4, h5, h6, a {
 .buttonnavigationpc:hover > .anavigation {
     background-color: orange;
 }
+
+.anavigationtel {
+    position: absolute;
+    top: -400px;
+}
+
+.navigationtel input {
+    position: absolute;
+    top: -30px;
+}
+
+.navigationtel label {
+    position: absolute;
+    top: -30px;
+}
+
+@media only screen and (max-width: 750px) {
+    .navigation {
+        position: absolute;
+        top: -150px;
+    }
+
+    .anavigationtel {
+        position: absolute;
+        right: 0px;
+        top: -100px;
+    }
+
+    .navigationtel label {
+        position: absolute;
+        right: 23px;
+        top: 23px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    #labelhamburger:checked ~ .buttonnavigationtel {
+        position: absolute;
+        right: 23px;
+        top: 70px;
+        color: green;
+    }
+}
