@@ -8,6 +8,9 @@ body, html, div, p, h1, h2, h3, h4, h5, h6, a {
     height: 90px;
     background-color: #333;
     color: white;
+    border-bottom: #1d1d1d;
+    position: sticky;
+    z-index: 2;
 }
 
 .containerimgheader {
@@ -15,12 +18,14 @@ body, html, div, p, h1, h2, h3, h4, h5, h6, a {
     height: 45px;
     width: 45px;
     flex: initial;
+    z-index: inherit;
 }
 
 #imgheader {
     height: 50px;
     margin-top: 18px;
     margin-left: 18px;
+    z-index: inherit;
 }
 
 .navigation {
@@ -53,11 +58,6 @@ body, html, div, p, h1, h2, h3, h4, h5, h6, a {
     background-color: orange;
 }
 
-.anavigationtel {
-    position: absolute;
-    top: -400px;
-}
-
 .navigationtel input {
     position: absolute;
     top: -30px;
@@ -73,16 +73,40 @@ body, html, div, p, h1, h2, h3, h4, h5, h6, a {
     color: white;
 }
 
+.navtel {
+    position: absolute;
+    top: -300px;
+    right: 0px;
+    background-color: #333;
+    padding: 40px 8Opx 40px 80px;
+    min-width: 100%;
+    z-index: 1;
+}
+
+.anavigationtel {
+    padding: 5px 5px 5px 5px;
+    margin-right: 35px;
+    border-radius: 10px;
+    transition: background-color;
+    transition-duration: 0.5s;
+    font-family: Arial;
+    text-decoration: none;
+    color: white;
+}
+
+.anavigationtel a {
+    color: white;
+    text-decoration: none;
+}
+
+.anavigationtel:hover {
+    background-color: orange;
+}
+
 @media only screen and (max-width: 750px) {
     .navigation {
         position: absolute;
         top: -150px;
-    }
-
-    .anavigationtel {
-        position: absolute;
-        right: 0px;
-        top: -100px;
     }
 
     .navigationtel label {
@@ -93,10 +117,19 @@ body, html, div, p, h1, h2, h3, h4, h5, h6, a {
         cursor: pointer;
     }
 
-    #labelhamburger:checked ~ .buttonnavigationtel {
+    .buttonnavigationtel {
+        list-style: none;
+        text-decoration: none;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    #hamburgernavigationtel[type="checkbox"]:checked ~ .navtel {
         position: absolute;
-        right: 23px;
-        top: 70px;
-        color: green;
+        right: 0px;
+        top: 90px;
+        transition: all;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in-out;
     }
 }
