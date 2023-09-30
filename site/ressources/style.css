@@ -78,7 +78,7 @@ body, html, div, p, h1, h2, h3, h4, h5, h6, a {
     top: -300px;
     right: 0px;
     background-color: #333;
-    padding: 40px 8Opx 40px 80px;
+    padding: 40px 12Opx 40px 120px;
     min-width: 100%;
     z-index: 1;
 }
@@ -125,9 +125,7 @@ body, html, div, p, h1, h2, h3, h4, h5, h6, a {
     }
 
     #hamburgernavigationtel[type="checkbox"]:checked ~ .navtel {
-        position: absolute;
-        right: 0px;
-        top: 90px;
+        transform: translateY(390px);
         transition: all;
         transition-duration: 0.3s;
         transition-timing-function: ease-in-out;
