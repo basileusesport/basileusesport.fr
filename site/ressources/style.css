@@ -9,7 +9,7 @@ body, html, div, p, h1, h2, h3, h4, h5, h6, a {
     background-color: #333;
     color: white;
     border-bottom: #1d1d1d;
-    position: sticky;
+    position: fixed;
     z-index: 2;
 }
 
@@ -80,7 +80,7 @@ body, html, div, p, h1, h2, h3, h4, h5, h6, a {
     background-color: #333;
     padding: 40px 12Opx 40px 120px;
     min-width: 100%;
-    z-index: 1;
+    z-index: auto;
 }
 
 .anavigationtel {
@@ -131,4 +131,51 @@ body, html, div, p, h1, h2, h3, h4, h5, h6, a {
         transition-duration: 0.3s;
         transition-timing-function: ease-in-out;
     }
+
+    .presentationpagetitles h1 {
+        font-size: 120%;
+    }
+
+    .corps .presentationpage img {
+        height: 100%;
+    }
+}
+
+@font-face {
+    font-family: "Paladins";
+    src: local("../basileusesport.fr/paladins-webfont.woff2"), url("https://drive.google.com/uc?export=download&id=1NW6oK3gcIn1jp0C4t6GqSIG7Gha4v9-t"), url("../ressources/font/paladins-webfont.woff");
+}
+
+@font-face {
+    font-family: "Paladins";
+    src: local("../basileusesport.fr/paladins-webfont"), local("../basileusesport.fr/paladins-webfont.woff2"), url("../ressources/font/paladins-webfont.woff2");
+}
+
+.corps {
+    min-width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.presentationpageimg {
+    min-width: 100%;
+    position: fixed;
+}
+
+.presentationpagetitles {
+    font-size: 200%;
+    font-family: Paladins;
+    color: black;
+    float: right;
+    padding-right: 40px;
+    position: absolute;
+    top: 350px;
+    right: 0;
+    text-align: right;
+}
+
+.presentationpagetitles h3 {
+    font-style: italic;
+    font-size: medium;
+    color: black;
 }
