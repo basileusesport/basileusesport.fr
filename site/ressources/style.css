@@ -55,7 +55,7 @@ body, html, div, p, h1, h2, h3, h4, h5, h6, a {
 }
 
 .buttonnavigationpc:hover > .anavigation {
-    background-color: orange;
+    background-color: #f76d01;
 }
 
 .navigationtel input {
@@ -101,7 +101,7 @@ body, html, div, p, h1, h2, h3, h4, h5, h6, a {
 }
 
 .anavigationtel:hover {
-    background-color: orange;
+    background-color: #f76d01;
 }
 
 @media only screen and (max-width: 750px) {
@@ -138,6 +138,30 @@ body, html, div, p, h1, h2, h3, h4, h5, h6, a {
 
     .corps .presentationpage img {
         height: 100%;
+    }
+
+    .avantages {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sousavantages {
+        display: flex;
+    }
+
+    .sousavantages h4 {
+        margin: auto;
+    }
+
+    .imgavantages {
+        height: 130px;
+        border-radius: 100px;
+    }
+
+    .avantages {
+        margin-left: 40px;
+        margin-right: 40px;
     }
 }
 
@@ -179,4 +203,35 @@ body, html, div, p, h1, h2, h3, h4, h5, h6, a {
     font-style: italic;
     font-size: medium;
     color: white;
+}
+
+.corpspage {
+    padding: 40px 3% 40px 3%;
+    position: relative;
+    top: 660px;
+    z-index: auto;
+    background-color: white;
+}
+
+.imgavantages {
+    max-height: 200px;
+    border-radius: 100px;
+}
+
+.avantages {
+    text-align: center;
+    display: flex;
+}
+
+.sousavantages {
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px grey;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.corpspage h3 {
+    font-family: Paladins;
+
 }
