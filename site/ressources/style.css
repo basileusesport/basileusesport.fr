@@ -235,3 +235,13 @@ body, html, div, p, h1, h2, h3, h4, h5, h6, a {
     font-family: Paladins;
 
 }
+
+@media only screen and (min-width: 750px) {
+    .avantages {
+        width: 100%;
+    }
+
+    .sousavantages {
+        flex: 1;
+    }
+}
