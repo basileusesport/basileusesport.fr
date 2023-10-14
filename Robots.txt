@@ -1,0 +1,2 @@
+Allow: /site/accueil.html
+Disallow: /site/ressources/font
