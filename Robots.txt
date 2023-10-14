@@ -1,2 +1,5 @@
-Allow: /site/accueil.html
-Disallow: /site/ressources/font
+User-agent: Googlebot
+Allow: /
+
+User-agent: AdsBot-Google
+Disallow: /
