@@ -246,3 +246,42 @@ body, html, div, p, h1, h2, h3, h4, h5, h6, a {
         background-color: white;
     }
 }
+
+.corps h2 {
+    font-family: Paladins;
+}
+
+.corps p {
+    margin: 10px;
+}
+
+.buttonhistoire {
+    padding: 15px;
+    padding-left: 7%;
+    padding-right: 7%;
+    border-radius: 10px;
+    border: solid 2px #ff3300;
+    background-color: #f76d01;
+    filter: saturate(2);
+    color: white;
+    transition: all ease-in 0.3s;
+    margin-left: 33%;
+}
+
+.buttonhistoire:hover {
+    background-color: orange;
+    border: solid 2px #f76d01;
+    box-shadow: 0px 0px 4px rgb(5, 5, 5);
+}
+
+.histoire {
+    text-align: justify;
+}
+
+.soushistoire {
+    width: 100%;
+}
+
+.soushistoirebutton {
+    width: 100%;
+}
