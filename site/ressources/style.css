@@ -265,7 +265,7 @@ body, html, div, p, h1, h2, h3, h4, h5, h6, a {
     filter: saturate(2);
     color: white;
     transition: all ease-in 0.3s;
-    margin-left: 33%;
+    margin-left: 38%;
 }
 
 .buttonhistoire:hover {
