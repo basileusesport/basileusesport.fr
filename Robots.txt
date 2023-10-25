@@ -1,5 +1,14 @@
 User-agent: Googlebot
 Allow: /
 
+User-agent: Googlebot-Image
+Disallow: /photos/illustrations
+
+User-agent: Googlebot-Image
+Disallow: /photos/ranks
+
+User-agent: Googlebot-Image
+Disallow: /photos/trailer
+
 User-agent: AdsBot-Google
 Disallow: /
