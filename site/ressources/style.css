@@ -277,3 +277,48 @@ body, html, div, p, h1, h2, h3, h4, h5, h6, a {
 .histoire {
     text-align: justify;
 }
+
+.form-recrutement {
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px;
+    padding: 30px 10% 30px 10%;
+    text-align: center;
+}
+
+.form-recrutement input[type="text"] {
+    border-radius: 10px;
+    border: 2px solid darkgray;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    height: 25px;
+    width: 70%;
+    color: black;
+}
+
+.form-recrutement input[type='submit'] {
+    border: solid 2px #ff3300;
+    background-color: #f76d01;
+    filter: saturate(2);
+    color: white;
+    transition: all ease-in 0.3s;
+    padding: 15px;
+    padding-left: 7%;
+    padding-right: 7%;
+    border-radius: 10px;
+}
+
+.form-recrutement input[type='submit']:hover {
+    background-color: orange;
+    border: solid 2px #f76d01;
+    box-shadow: 0px 0px 4px rgb(5, 5, 5);
+}
+
+.form-recrutement select {
+    width: 50%;
+    padding: 4px;
+    border-radius: 10px;
+}

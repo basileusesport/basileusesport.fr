@@ -102,9 +102,50 @@
                     <button class="buttonhistoire">En savoir plus !</button>
                 </div>
             </div>
+
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+
+            <h2>Vous accueillir...</h2>
+            <div class="recrutement">
+                <br/>
+                <article class="sousrecrutement">
+                    <p>&nbsp;<strong>Basileus esport</strong> possède plusieurs <a href="#">Line Up</a> (équipes) partant du Diamant jusqu'au SSL ! Soit, une large disponibilité au niveau des recrutements !</p>
+                    <p>&nbsp;Etant ouverts sur les recrutements, nous vous mettons ce formulaire à disposition. Il suffira de le remplir pour être retenu(e) dans notre serveur. Prenez soin de bien vouloir vérifier vos valeurs entrées et qu'il n'y ai aucune faute sur vos informations, merci !</p>
+                    <br/>
+                    <form method="post" class="form-recrutement">
+                        <h3>Formulaire recrutement</h3>
+                        <br/>
+                        <br/>
+                        <label for="username-accueil-form">Nom d'utilisateur</label> <br/>
+                        <input placeholder="username" id="username-accueil-form" type="text" required/>
+                        <br/>
+                        <label for="discord-accueil-form">Pseudonyme discord</label> <br/>
+                        <input placeholder="discord tag" id="discord-accueil-form" type="text" required/>
+                        <br/>
+                        <label for="rank-accueil-form">Rank</label> <br/>
+                        <select name="rank" id="rank-accueil-form" required>
+                            <option value="">Choisir son rang--</option>
+                            <option value="diamant">Diamant</option>
+                            <option value="champion">Champion</option>
+                            <option value="grand-champion">Grand Champion</option>
+                            <option value="supersonic-legend">Supersonic legend</option>
+                        </select>
+                        <br/>
+                        <br/>
+                        <input type="submit" value="Envoyer" class="envoyer-accueil-form">
+                        
+                    </form>
+                </article>
+            </div>
         </div>
     </div>
 
     <script src="../site/ressources/script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
 </body>
 </html>
