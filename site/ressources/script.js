@@ -22,14 +22,12 @@ const infoRecruté = new InfoRecrutement(document.querySelector("#username-accue
 
 buttonRecrutement.addEventListener("click", () => {
     Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "kill.maldeme@gmail.com",
-        Password : "445BBCBD956CB9889327222ACE98F67C3835",
+        SecureToken : "18597780-a1db-4d9b-9a1a-31fd0046dc80",
         To : 'basileusesport@gmail.com',
-        From : "kill.maldeme@gmail.com",
+        From : "basileusesport@gmail.com",
         Subject : `Nouveau recrutement de ${infoRecruté.discord} !`,
         Body : `Il semblerait qu'une personne s'est inscrite sur notre site ! <br> ${infoRecruté.displayInfos()}`
     }).then(
-      message => alert(message)
+      message => alert("Candidature prématurée envoyée !")
     );
 });
