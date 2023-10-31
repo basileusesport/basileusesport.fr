@@ -23,7 +23,7 @@ const infoRecruté = new InfoRecrutement(document.querySelector("#username-accue
 buttonRecrutement.addEventListener("click", () => {
     Email.send({
         SecureToken : "18597780-a1db-4d9b-9a1a-31fd0046dc80",
-        To : 'basileusesport@gmail.com',
+        To : 'recrutement-basileusesport@outlook.fr',
         From : "basileusesport@gmail.com",
         Subject : `Nouveau recrutement de ${infoRecruté.discord} !`,
         Body : `Il semblerait qu'une personne s'est inscrite sur notre site ! <br> ${infoRecruté.displayInfos()}`
