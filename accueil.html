@@ -8,6 +8,7 @@
     <title>Basileus Esport - Basileus Esport recrute ! Accueil site internet</title>
     <meta name="robots" content="index"/>
     <meta name="description" content="Basileus Esport - Association Esport déclarée en Avril 2021 et enregistrée/immatriculée au RCS, sous loi 1901. L'association à pour but de reunir les joueurs passionés de Rocket League et de les faire jouer ensemble dans des matchs acharnés pour décrocher la victoire !" />
+    <script src="https://kit.fontawesome.com/4f9ce9048d.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header">
@@ -120,12 +121,26 @@
                         <h3>Formulaire recrutement</h3>
                         <br/>
                         <br/>
-                        <label for="username-accueil-form">Nom d'utilisateur</label> <br/>
-                        <input placeholder="username" id="username-accueil-form" type="text" required/>
+                        <div class="input-text-form">
+                            <div class="icons-form">
+                                <i class="fa-solid fa-user"></i>
+
+                                <i class="fa-brands fa-discord"></i>
+                            </div>
+
+                            <br/><br/><br>
+
+                            <div>
+                                <input class="username-accueil-form" id="username-accueil-form" type="text" required/>
+                                <label for="username-accueil-form" class="label-recrutement_1">Nom d'utilisateur</label>
+
+                                <input class="discord-accueil-form" id="discord-accueil-form" type="text" required/>
+                                <label for="discord-accueil-form" class="label-recrutement_2">Pseudonyme discord</label>
+                            </div>                           
+                        </div>
+                        
                         <br/>
-                        <label for="discord-accueil-form">Pseudonyme discord</label> <br/>
-                        <input placeholder="discord tag" id="discord-accueil-form" type="text" required/>
-                        <br/>
+                        <i class="fa-solid fa-ranking-star"></i>
                         <label for="rank-accueil-form">Rank</label> <br/>
                         <select name="rank" id="rank-accueil-form" required>
                             <option value="">Choisir son rang--</option>
