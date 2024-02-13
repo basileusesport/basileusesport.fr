@@ -80,7 +80,10 @@ body, html, div, p, h1, h2, h3, h4, h5, h6, a {
     background-color: #333;
     padding: 40px 12Opx 40px 120px;
     min-width: 100%;
-    z-index: auto;
+    z-index: -2;
+    transition: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
 }
 
 .anavigationtel {
@@ -385,4 +388,27 @@ body, html, div, p, h1, h2, h3, h4, h5, h6, a {
 
 .icons-form .fa-solid {
     margin-bottom: 40px;
+}
+
+.legend-form {
+    text-align: left;
+}
+
+.fieldset-form {
+    margin: 0 10% 20px 10%;
+    padding: 0 0 0 10;
+}
+
+.fieldset-form select {
+    position: relative;
+    top: 7px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    width: 100%;
+    outline: none;
+}
+
+#rank-accueil-form option:hover {
+    background-color: #f76d01;
 }
